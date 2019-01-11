@@ -1,5 +1,5 @@
 var jq = document.createElement('script');
-jq.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js";
+jq.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
 document.getElementsByTagName('head')[0].appendChild(jq);
 
 contacts = [];
@@ -34,9 +34,9 @@ function selectContact(name){
 }
 
 function sendMessage(text){
-    $("#main > footer > div._3oju3 > div._2bXVy > div > div._2S1VP.copyable-text.selectable-text").text(text)
-    input = document.querySelector("#main > footer > div._3oju3 > div._2bXVy > div > div._2S1VP.copyable-text.selectable-text");
+    $("#main > footer > div._3pkkz > div._1Plpp > div > div._2S1VP.copyable-text.selectable-text").text(text)
+    input = document.querySelector("#main > footer > div._3pkkz > div._1Plpp > div > div._2S1VP.copyable-text.selectable-text");
     input.dispatchEvent(new Event('input', {bubbles: true}));
-	var button = document.querySelector('#main > footer > div._3oju3 > button');
+	var button = document.querySelector("#main > footer > div._3pkkz.copyable-area > div:nth-child(3) > button > span");
 	button.click();
 }
